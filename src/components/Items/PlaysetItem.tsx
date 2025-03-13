@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function MixItem() {
   return (
-    <a
+    <Link
       href="/"
       className="flex flex-col gap-2 p-3 transition-colors rounded-md bg-white/5 hover:bg-white/10"
     >
@@ -18,6 +19,6 @@ export function MixItem() {
       <span className="text-sm text-zinc-500">
         Wallows, COIN, girl in red and more
       </span>
-    </a>
+    </Link>
   )
 }

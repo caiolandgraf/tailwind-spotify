@@ -1,4 +1,5 @@
 import { HomeIcon, Library, Search } from 'lucide-react'
+import Link from 'next/link'
 
 export function Sidebar() {
   return (
@@ -10,56 +11,56 @@ export function Sidebar() {
       </div>
 
       <nav className="mt-10 space-y-5">
-        <a
+        <Link
           href="/"
           className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
         >
           <HomeIcon /> Home
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/"
           className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
         >
           <Search /> Search
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/"
           className="flex items-center gap-3 text-sm font-semibold text-zinc-200"
         >
           <Library /> Your Library
-        </a>
+        </Link>
       </nav>
 
       <nav className="flex flex-col gap-3 pt-6 mt-6 border-t border-zinc-1200">
-        <a
+        <Link
           href="/"
           className="text-sm font-semibold text-zinc-400 hover:text-zinc-100"
         >
           Hot Hits Brasil
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/"
           className="text-sm font-semibold tex text-zinc-400 hover:text-zinc-100"
         >
           Aniver Funk
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/"
           className="text-sm font-semibold text-zinc-400 hover:text-zinc-100"
         >
           My Playlist #13
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/"
           className="text-sm font-semibold text-zinc-400 hover:text-zinc-100"
         >
           Top Brasil
-        </a>
+        </Link>
       </nav>
     </aside>
   )

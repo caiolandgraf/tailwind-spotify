@@ -1,9 +1,10 @@
 import { Play } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function PlaylistItem() {
   return (
-    <a
+    <Link
       href="/"
       className="flex items-center gap-4 overflow-hidden transition-colors rounded group hover:bg-white/10 bg-white/5"
     >
@@ -22,6 +23,6 @@ export function PlaylistItem() {
       >
         <Play className="fill-black" />
       </button>
-    </a>
+    </Link>
   )
 }
